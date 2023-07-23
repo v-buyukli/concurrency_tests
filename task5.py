@@ -17,9 +17,7 @@ def sequential_requests(url, num):
         print(f"Request {url}. Response: {response}")
 
     elapsed = time.time() - start_time
-    print(
-        f"Sequential: {elapsed:.2f} s"
-    )
+    print(f"Sequential: {elapsed:.2f} s")
 
 
 def thread_pool_requests(url, num):
@@ -32,9 +30,7 @@ def thread_pool_requests(url, num):
             print(f"Request: {url}. Response: {response}")
 
     elapsed = time.time() - start_time
-    print(
-        f"ThreadPoolExecutor. Time: {elapsed:.2f} s"
-    )
+    print(f"ThreadPoolExecutor. Time: {elapsed:.2f} s")
 
 
 def process_pool_requests(url, num):
@@ -47,9 +43,7 @@ def process_pool_requests(url, num):
             print(f"Request: {url}. Response: {response}")
 
     elapsed = time.time() - start_time
-    print(
-        f"ProcessPoolExecutor. Time: {elapsed:.2f} s"
-    )
+    print(f"ProcessPoolExecutor. Time: {elapsed:.2f} s")
 
 
 if __name__ == "__main__":
